@@ -1,13 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hover-underline {
+	position: relative;
+	transition: all 0.2s ease-in;
+	transition-duration: 0.25s;
+}
+
+.hover-underline::before,
+.hover-underline::after {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	opacity: 0;
+	width: 0;
+	height: 3px;
+	transition: all 0.2s ease-in-out;
+	transition-duration: 0.45s;
+	background-color: gray;
+}
+
+.hover-underline::before {
+	left: 50%;
+}
+
+.hover-underline::after {
+	right: 50%;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+	width: 50%;
+	opacity: 1;
+}
+
+.active-link::before,
+.active-link::after {
+	width: 50%;
+	opacity: 1;
+}
+
+.recipe {
+	transition: all 0.5s ease-in-out;
+}
+
+.recipe:hover {
+	transform: scale(1.09);
 }
