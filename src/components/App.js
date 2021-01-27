@@ -66,6 +66,52 @@ const recipes = [
 		cook_time: 70,
 		image_url: 'https://www.georgianjournal.ge/media/images/georgianews/2015/July/Cuisine/mushroom-khinkali1.jpg',
 		user: 'Nika',
+		ingredients: [
+			{
+				id: 1,
+				name: 'Meat Filling',
+				amount: '2',
+				measurement: 'kg',
+			},
+			{
+				id: 2,
+				name: 'Meat Filling',
+				amount: '2',
+				measurement: null,
+			},
+			{
+				id: 3,
+				name: 'Water',
+				amount: '1/4',
+				measurement: 'cup',
+			},
+		],
+		preparations: [
+			{
+				id: 1,
+				order: 1,
+				title: 'Make the dough',
+				description:
+					'Stir together flour and salt in a medium bowl. Make a well in center of dry ingredients, and add 1/2 cup water and egg. Stir with a wooden spoon until a shaggy dough forms. Turn dough out onto a lightly floured surface, and knead until smooth and elastic, 4 to 5 minutes. Place dough in a lightly oiled bowl, and cover loosely with plastic wrap. Set aside.',
+				image_id: 2,
+			},
+			{
+				id: 2,
+				order: 3,
+				title: 'Make the meat filling',
+				description:
+					'Using a fork or your hands, stir together all meat filling ingredients in a large bowl until ground meat is completely broken up and mixture is well blended.',
+				image_id: 3,
+			},
+			{
+				id: 3,
+				order: 2,
+				title: 'Make the meat filling',
+				description:
+					'Divide dough into thirds. Shape 1 dough portion into a ball, and roll out to about 1/4-inch thickness on a lightly floured work surface. (Keep the remaining dough portions covered with plastic wrap while you work.) Using a 2 1/2-inch round cutter, cut out 8 dough circles, rerolling dough scraps as necessary.',
+				image_id: 4,
+			},
+		],
 	},
 	{
 		id: 3,
